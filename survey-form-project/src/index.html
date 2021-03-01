@@ -1,0 +1,86 @@
+<!--
+Created by: Andrew Hatch
+Date: 02/07/2021
+-->
+
+<!DOCTYPE html>
+<html>
+
+ <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+
+  <main id="main">
+    <header id = "header">
+      <h1 id="title">Survey Form</h1>
+      <p id="description"><em>Please fill out this short survey</em></p>
+      <hr>
+    </header>
+
+    <body>
+      <div align="center">
+      <form id="survey-form" name="survey-form" action="">
+        <label for="name" id="name-label"> Name:
+        <input class="questions" id="name" type="text" placeholder="Enter your name" required>
+        </label>
+
+        <label for="email" id="email-label"> Email:
+        <input class="questions" id="email" type="email" placeholder="Enter your email" required>
+        </label>
+
+        <label for="number" id="number-label"> Age:
+        <input class="questions" id="number" type="number" placeholder="Enter your age" min="1" max="100">
+        </label>
+
+        <p for="employment" class="questions questions2"> What is your current employment status?</p>
+          <label for="student" class="radio">
+          <input id="student" type="radio" name="employment" value="student" checked> Student
+          </label>
+
+          <label for="full-time" class="radio">
+          <input id="full-time" type="radio" name="employment" value="full-time"> Full-time Work
+          </label>
+
+          <label for="part-time" class="radio">
+          <input id="part-time" type="radio" name="employment" value="part-time"> Part-time Work
+          </label>
+
+          <label for="other" class="radio">
+          <input id="other" type="radio" name="employment" value="other"> Other
+          </label>
+
+        <label for="dropdown" class="questions questions2">What is your favorite Star Wars movie?</label>
+
+        <select name="dropdown" id="dropdown" class="questions" required>
+          <option disabled selected value>Choose an option</option>
+          <option value="the-phantom-menace">The Phantom Menace</option>
+          <option value="attack-of-the-clones">Attack of the Clones</option>
+          <option value="revenge-of-the-sith">Revenge of the Sith</option>
+          <option value="a-new-hope">A New Hope</option>
+          <option value="the-empire-strikes-back">The Empire Strikes Back</option>
+          <option value="return-of-the-jedi">Return of the Jedi</option>
+          <option value="the-force-awakens">The Force Awakens</option>
+          <option value="the-last-jedi">The Last Jedi</option>
+          <option value="the-rise-of-skywalker">The Rise of Skywalker</option>
+        </select>
+
+        <label for="checkboxes" class="questions questions2">Which movies do you wish had not been made? (Check all that apply)</label>
+        <label for="the-phantom-menace" class="checkbox"><input id="the-phantom-menace" type="checkbox" name="movies" value="the-phantom-menace" checked> The Phantom Menace</label>
+        <label for="attack-of-the-clones" class="checkbox"><input id="attack-of-the-clones" type="checkbox" name="movies" value="attack-of-the-clones"> Attack of the Clones</label>
+        <label for="revenge-of-the-sith" class="checkbox"><input id="revenge-of-the-sith" type="checkbox" name="movies" value="revenge-of-the-sith"> Revenge of the Sith</label>
+        <label for="a-new-hope" class="checkbox"><input id="a-new-hope" type="checkbox" name="movies" value="a-new-hope"> A New Hope</label>
+        <label for="the-empire-strikes-back" class="checkbox"><input id="the-empire-strikes-back" type="checkbox" name="movies" value="the-empire-strikes-back"> The Empire Strikes Back</label>
+        <label for="return-of-the-jedi" class="checkbox"><input id="return-of-the-jedi" type="checkbox" name="movies" value="return-of-the-jedi"> Return of the Jedi</label>
+        <label for="the-force-awakens" class="checkbox"><input id="the-force-awakens" type="checkbox" name="movies" value="the-force-awakens"> The Force Awakens</label>
+        <label for="the-last-jedi" class="checkbox"><input id="the-last-jedi" type="checkbox" name="movies" value="the-last-jedi"> The Last Jedi</label>
+        <label for="the-rise-of-skywalker" class="checkbox"><input id="the-rise-of-skywalker" type="checkbox" name="movies" value="the-rise-of-skywalker"> The Rise of Skywalker</label>
+
+        <label for="comments" class="questions questions2">Any comments or suggestions?</label>
+
+        <textarea id="comments" placeholder="Enter your comment here"></textarea>
+
+        <button type="submit" id="submit">Submit</button>
+      </form>
+      </div>
+    </body>
+  </main>
+</html>
